@@ -13,17 +13,19 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-# Bootloader selection
-#BOOTLOADER = rp2040
+AUDIO_ENABLE = no
+MOUSEKEY_ENABLE = no
+AUDIO_ENABLE = no
+RGBLIGHT_ENABLE = no
+RGB_MATRIX_ENABLE = yes
+RGB_MATRIX_FRAMEBUFFER_EFFECTS = yes
+RGB_MATRIX_KEYREACTIVE_EFFECTS = yes
 
+# Bootloader selection
+OLED_ENABLE = yes
 CONVERT_TO = liatris
+#CONVERT_TO = promicro_rp2040
+
 SPLIT_KEYBOARD = yes
 
-ENCODER_ENABLE = no
-
-#BACKLIGHT_ENABLE = yes
-#BACKLIGHT_PIN = D3
-
-
-# Bootloader selection
-#BOOTLOADER = uf2boot
+RGB_MATRIX_STARTUP_MODE = RGB_MATRIX_SOLID_REACTIVE_SIMPLE
