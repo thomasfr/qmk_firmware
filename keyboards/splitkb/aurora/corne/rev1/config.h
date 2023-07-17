@@ -20,6 +20,10 @@
 // but can't yet be given a value
 #define SPLIT_HAND_PIN F4
 
+// https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md
+// #define TAPPING_TERM 200
+// #define QUICK_TAP_TERM 100
+
 // Not yet available in `info.json`
 #ifdef OLED_ENABLE
 #    define OLED_DISPLAY_128X32
@@ -28,7 +32,7 @@
 
 // Not yet available in `info.json`
 #ifdef RGB_MATRIX_ENABLE
-#    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 128
+#    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 200
 #    define RGB_MATRIX_LED_COUNT 54
 #    define RGB_MATRIX_SPLIT { 27, 27 }
 #    define SPLIT_TRANSPORT_MIRROR
