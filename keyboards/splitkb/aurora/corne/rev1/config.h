@@ -16,6 +16,13 @@
 
 #pragma once
 
+//#define HOLD_ON_OTHER_KEY_PRESS
+#define PERMISSIVE_HOLD
+//#define IGNORE_MOD_TAP_INTERRUPT
+
+#define QUICK_TAP_TERM 120
+#define TAPPING_TERM 190
+
 // `SPLIT_HAND_PIN` can currently be defined in `info.json`,
 // but can't yet be given a value
 #define SPLIT_HAND_PIN F4
@@ -37,7 +44,7 @@
 #    define RGB_MATRIX_SPLIT { 27, 27 }
 #    define SPLIT_TRANSPORT_MIRROR
 
-#   define RGB_MATRIX_KEYRELEASES // reacts to keyreleases (instead of keypresses)
+#   define RGB_MATRIX_KEYPRESSES
 #   define RGB_DISABLE_WHEN_USB_SUSPENDED // turn off effects when suspended
 #   define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 // #   define RGB_MATRIX_LED_PROCESS_LIMIT (RGB_MATRIX_LED_COUNT + 4) / 5 // limits the number of LEDs to process in an animation per task run (increases keyboard responsiveness)
