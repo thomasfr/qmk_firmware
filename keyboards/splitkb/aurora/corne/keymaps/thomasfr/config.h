@@ -14,27 +14,30 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #pragma once
-#define DEBOUNCE 4 // Default is 5ms
+#define DEBOUNCE 3 // Default is 5ms
 
 //#define HOLD_ON_OTHER_KEY_PRESS
-#define PERMISSIVE_HOLD
-//#define IGNORE_MOD_TAP_INTERRUPT
+//#define PERMISSIVE_HOLD
 
 // https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md
-#define QUICK_TAP_TERM 130
-#define TAPPING_TERM 220
+#define QUICK_TAP_TERM 120
+#define QUICK_TAP_TERM_PER_KEY
+#define TAPPING_TERM 200
+#define TAPPING_TERM_PER_KEY
 
-#define AUTO_SHIFT_TIMEOUT 175
-#define NO_AUTO_SHIFT_SPECIAL
-#define NO_AUTO_SHIFT_NUMERIC
-#define RETRO_SHIFT
-#define AUTO_SHIFT_REPEAT
+//#define AUTO_SHIFT_TIMEOUT TAPPING_TERM
+//#define NO_AUTO_SHIFT_SPECIAL
+//#define NO_AUTO_SHIFT_NUMERIC
+//#define AUTO_SHIFT_NO_SETUP
+//#define RETRO_SHIFT 400
+//#define AUTO_SHIFT_REPEAT
 
 //#define DOUBLE_TAP_SHIFT_TURNS_ON_CAPS_WORD
+#define CAPS_WORD_IDLE_TIMEOUT 3000  // 3 seconds.
 
 // Not yet available in `info.json`
 #ifdef RGB_MATRIX_ENABLE
-#    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 220
+#    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 200
 #    define RGB_MATRIX_LED_COUNT 54
 #    define RGB_MATRIX_SPLIT { 27, 27 }
 #    define SPLIT_TRANSPORT_MIRROR
@@ -100,3 +103,8 @@
 #    define ENABLE_RGB_MATRIX_SOLID_SPLASH
 #    define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
 #endif
+
+#define DYNAMIC_MACRO_NO_NESTING
+
+#define MY_LOCK C(G(KC_Q)) // Lock the computer
+#define MY_EURO S(A(KC_2)) // €
