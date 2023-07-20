@@ -2,53 +2,65 @@
     "keyboard": "splitkb/aurora/corne/rev1",
     "keymap": "default",
     "layers": [
-        [
-            "MO(7)", "KC_Q", "KC_W", "KC_E", "KC_R", "KC_T",                                                     "KC_Y", "KC_U", "KC_I", "KC_O", "KC_P", "KC_MPLY",
-            "CW_TOGG", "LSFT_T(KC_A)", "LCTL_T(KC_S)", "LALT_T(KC_D)", "LGUI_T(KC_F)", "ALL_T(KC_G)",            "ALL_T(KC_H)", "RGUI_T(KC_J)", "RALT_T(KC_K)", "RCTL_T(KC_L)", "RSFT_T(KC_SCLN)", "KC_VOLU",
-            "TT(6)", "KC_Z", "KC_X", "KC_C", "KC_V", "KC_B",                                                     "KC_N", "KC_M", "KC_COMM", "KC_DOT", "KC_SLSH", "KC_VOLD",
-            "LT(1, KC_ESC)", "LT(2, KC_SPC)", "LT(4, KC_TAB)",                                                   "LT(4, KC_ENT)", "LT(3, KC_BSPC)", "LT(5, KC_DEL)"
-        ],
-        [
-            "_______", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX",                                    "XXXXXXX", "KC_BRIU", "KC_VOLU", "XXXXXXX", "XXXXXXX", "_______",
-            "_______", "KC_LSFT", "KC_LCTL", "KC_LOPT", "KC_LGUI", "KC_HYPR",                                    "XXXXXXX", "KC_MPRV", "KC_VOLD", "KC_MNXT", "XXXXXXX", "_______",
-            "_______", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX",                                    "XXXXXXX", "KC_BRID", "KC_MPLY", "KC_MUTE", "XXXXXXX", "_______",
-            "_______", "_______", "_______",                                                                     "HYPR(KC_3)", "HYPR(KC_4)", "HYPR(KC_5)"
-        ],
-        [
-            "_______", "XXXXXXX", "XXXXXXX", "SGUI(KC_Z)", "LGUI(KC_Z)", "XXXXXXX",                              "KC_PGUP", "KC_HOME", "KC_UP", "KC_END", "XXXXXXX", "_______",
-            "_______", "KC_LSFT", "LCTL_T(LGUI(KC_X))", "LOPT_T(LGUI(KC_C))", "LGUI_T(LGUI(KC_V))", "KC_HYPR",                           "KC_PGDN", "KC_LEFT", "KC_DOWN", "KC_RGHT", "XXXXXXX", "_______",
-            "_______", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX",                                    "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
-            "_______", "_______", "_______",                                                                     "_______", "_______", "_______"
-        ],
-        [
-            "_______", "KC_CIRC", "KC_P7", "KC_P8", "KC_P9", "KC_PSLS",                                          "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
-            "_______", "MY_EURO", "KC_P4", "KC_P5", "KC_P6", "KC_PAST",                                          "KC_HYPR", "KC_LGUI", "KC_LOPT", "KC_LCTL", "KC_LSFT", "_______",
-            "_______", "KC_PERC", "KC_P1", "KC_P2", "KC_P3", "KC_PMNS",                                          "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
-            "KC_PDOT", "KC_P0", "KC_PPLS",                                                                       "_______", "_______", "_______"
-        ],
-        [
-            "_______", "KC_CIRC", "KC_PIPE", "KC_LBRC", "KC_RBRC", "KC_SLSH",                                    "KC_HASH", "KC_LT", "KC_GT", "KC_TILD", "XXXXXXX", "_______",
-            "_______", "KC_AT", "KC_EQL", "KC_LCBR", "KC_RCBR", "KC_ASTR",                                       "KC_UNDS", "KC_LPRN", "KC_RPRN", "KC_COLN", "KC_SCLN", "_______",
-            "_______", "KC_PERC", "KC_AMPR", "KC_QUOT", "KC_DQUO", "KC_MINS",                                    "KC_GRV", "KC_DLR", "KC_BSLS", "KC_SLSH", "XXXXXXX", "_______",
-            "KC_EXLM", "KC_QUES", "KC_MINS",                                                                     "KC_PLUS", "KC_DOT", "KC_COMM"
-        ],
-        [
-            "_______", "MY_LOCK", "XXXXXXX", "HYPR(KC_UP)", "XXXXXXX", "SGUI(KC_4)",                             "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
-            "_______", "XXXXXXX", "HYPR(KC_LEFT)", "HYPR(KC_DOWN)", "HYPR(KC_RGHT)", "LCTL(SGUI(KC_4))",         "KC_HYPR", "KC_LGUI", "KC_LOPT", "KC_LCTL", "KC_LSFT", "_______",
-            "_______", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "SGUI(KC_5)",                                 "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
-            "HYPR(KC_1)", "LGUI(KC_SPC)", "HYPR(KC_2)",                                                          "_______", "_______", "_______"
-        ],
-        [
-            "_______", "RGB_VAD", "RGB_VAI", "RGB_RMOD", "RGB_MOD", "RGB_M_P",                                   "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
-            "_______", "RGB_TOG", "XXXXXXX", "RGB_SPD", "RGB_SPI", "RGB_M_B",                                    "KC_HYPR", "KC_LGUI", "KC_LOPT", "KC_LCTL", "KC_LSFT", "_______",
-            "_______", "RGB_SAD", "RGB_SAI", "RGB_HUD", "RGB_HUI", "RGB_M_G",                                    "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
-            "HYPR(KC_1)", "LGUI(KC_SPC)", "HYPR(KC_2)",                                                          "_______", "_______", "_______"
-        ],
-        [
-            "_______", "XXXXXXX", "XXXXXXX", "DM_REC1", "DM_REC2", "XXXXXXX",                                   "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
-            "_______", "XXXXXXX", "XXXXXXX", "DM_PLY1", "DM_PLY2", "XXXXXXX",                                    "KC_HYPR", "KC_LGUI", "KC_LOPT", "KC_LCTL", "KC_LSFT", "_______",
-            "_______", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX",                                    "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
-            "HYPR(KC_1)", "LGUI(KC_SPC)", "HYPR(KC_2)",                                                          "_______", "_______", "_______"
+    [
+        "LT(6, KC_ESC)", "KC_Q", "KC_W", "KC_E", "KC_R", "KC_T",                                                         "KC_Y", "KC_U", "KC_I", "KC_O", "KC_P", "LT(9, KC_MPLY)",
+        "MO(7)", "LSFT_T(KC_A)", "LCTL_T(KC_S)", "LALT_T(KC_D)", "LGUI_T(KC_F)", "ALL_T(KC_G)",                          "ALL_T(KC_H)", "RGUI_T(KC_J)", "RALT_T(KC_K)", "RCTL_T(KC_L)", "RSFT_T(KC_SCLN)", "LT(7, KC_QUOT)",
+        "LT(8, KC_MUTE)", "KC_Z", "KC_X", "KC_C", "KC_V", "KC_B",                                                        "KC_N", "KC_M", "KC_COMM", "KC_DOT", "KC_SLSH", "LT(8, KC_MUTE)",
+        "LT(1, KC_ESC)", "LT(2, KC_SPC)", "LT(3, KC_TAB)",                                                               "LT(3, KC_ENT)", "LT(4, KC_BSPC)", "LT(5, KC_DEL)"
+    ],
+    [
+        "_1_____", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX",                                                "XXXXXXX", "KC_BRIU", "KC_VOLU", "XXXXXXX", "XXXXXXX", "_______",
+        "_1_____", "KC_LSFT", "KC_LCTL", "KC_LOPT", "KC_LGUI", "KC_HYPR",                                                "XXXXXXX", "KC_BRID", "KC_VOLD", "XXXXXXX", "XXXXXXX", "_______",
+        "_1_____", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX",                                                "XXXXXXX", "KC_MPRV", "KC_MNXT", "XXXXXXX", "XXXXXXX", "_______",
+        "_1_____", "_______", "_______",                                                                                 "HYPR(KC_3)", "HYPR(KC_4)", "HYPR(KC_5)"
+    ],
+    [
+        "_2_____", "LGUI(KC_Q)", "LGUI(KC_W)", "LGUI(KC_F)", "LGUI(KC_R)", "LGUI(KC_T)",                                 "KC_PGUP", "KC_HOME", "KC_UP", "KC_END", "XXXXXXX", "_______",
+        "_2_____", "KC_LSFT", "LGUI(KC_S)", "KC_LOPT", "KC_LGUI", "KC_HYPR",                                             "KC_PGDN", "KC_LEFT", "KC_DOWN", "KC_RGHT", "XXXXXXX", "_______",
+        "_2_____", "LGUI(KC_Z)", "LGUI(KC_X)", "LGUI(KC_C)", "LGUI(KC_V)", "LGUI(KC_B)",                                 "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
+        "_2_____", "_______", "_______",                                                                                 "_______", "_______", "_______"
+    ],
+    [
+        "_3_____", "KC_CIRC", "KC_PIPE", "KC_LBRC", "KC_RBRC", "KC_SLSH",                                                "KC_HASH", "KC_LT", "KC_GT", "KC_TILD", "XXXXXXX", "_______",
+        "_3_____", "KC_AT", "KC_EQL", "KC_LCBR", "KC_RCBR", "KC_ASTR",                                                   "KC_UNDS", "KC_LPRN", "KC_RPRN", "KC_COLN", "KC_SCLN", "_______",
+        "_3_____", "KC_PERC", "KC_AMPR", "KC_QUOT", "KC_DQUO", "KC_MINS",                                                "KC_GRV", "KC_DLR", "KC_BSLS", "KC_SLSH", "XXXXXXX", "_______",
+        "KC_EXLM", "KC_QUES", "KC_MINS",                                                                                 "KC_PLUS", "KC_DOT", "KC_COMM"
+    ],
+    [
+        "_4_____", "KC_CIRC", "KC_P7", "KC_P8", "KC_P9", "KC_PSLS",                                                      "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
+        "_4_____", "MY_EURO", "KC_P4", "KC_P5", "KC_P6", "KC_PAST",                                                      "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
+        "_4_____", "KC_PERC", "KC_P1", "KC_P2", "KC_P3", "KC_PMNS",                                                      "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
+        "KC_PDOT", "KC_P0", "KC_PPLS",                                                                                   "_______", "_______", "_______"
+    ],
+    [
+        "_5_____", "MY_LOCK", "XXXXXXX", "HYPR(KC_UP)", "XXXXXXX", "SGUI(KC_3)",                                         "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
+        "_5_____", "XXXXXXX", "HYPR(KC_LEFT)", "HYPR(KC_DOWN)", "HYPR(KC_RGHT)", "SGUI(KC_4)",                           "KC_HYPR", "KC_RGUI", "KC_ROPT", "KC_RCTL", "KC_RSFT", "_______",
+        "_5_____", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "SGUI(KC_5)",                                             "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
+        "HYPR(KC_1)", "LGUI(KC_SPC)", "HYPR(KC_2)",                                                                      "_______", "_______", "_______"
+    ],
+    [
+        "_6_____", "RGB_VAD", "RGB_VAI", "RGB_RMOD", "RGB_MOD", "XXXXXXX",                                               "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
+        "_6_____", "RGB_TOG", "RGB_TOG", "RGB_SPD", "RGB_SPI", "XXXXXXX",                                                "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
+        "_6_____", "RGB_SAD", "RGB_SAI", "RGB_HUD", "RGB_HUI", "XXXXXXX",                                                "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
+        "_6_____", "_______", "_______",                                                                                 "_______", "_______", "_______"
+    ],
+    [
+        "_7_____", "_______", "_______", "_______", "_______", "_______",                                                "_______", "_______", "_______", "_______", "_______", "_______",
+        "_7_____", "KC_A", "KC_S", "KC_D", "KC_F", "KC_G",                                                               "KC_H", "KC_J", "KC_K", "KC_L", "KC_SCLN", "_______",
+        "_7_____", "_______", "_______", "_______", "_______", "_______",                                                "_______", "_______", "_______", "_______", "_______", "_______",
+        "_7_____", "_______", "_______",                                                                                 "_______", "_______", "_______"
+    ],
+    [
+        "_8_____", "XXXXXXX", "XXXXXXX", "DM_REC1", "DM_REC2", "XXXXXXX",                                                "XXXXXXX", "XXXXXXX", "DM_REC1", "DM_REC2", "XXXXXXX", "_______",
+        "_8_____", "XXXXXXX", "XXXXXXX", "DM_PLY1", "DM_PLY2", "XXXXXXX",                                                "XXXXXXX", "XXXXXXX", "DM_PLY1", "DM_PLY2", "XXXXXXX", "_______",
+        "_8_____", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX",                                                "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
+        "_8_____", "_______", "_______",                                                                                 "_______", "_______", "_______"
+    ],
+    [
+        "_9_____", "_______", "_______", "_______", "_______", "_______",                                                "_______", "_______", "_______", "KC_VOLU", "KC_MNXT", "_______",
+        "_9_____", "_______", "_______", "_______", "_______", "_______",                                                "_______", "_______", "_______", "KC_VOLD", "KC_MPRV", "_______",
+        "_9_____", "_______", "_______", "_______", "_______", "_______",                                                "_______", "_______", "_______", "_______", "_______", "_______",
+        "_9_____", "_______", "_______",                                                                                 "_______", "_______", "_______"
         ]
     ],
     "layout": "LAYOUT_split_3x6_3",
