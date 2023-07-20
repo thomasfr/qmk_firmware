@@ -16,7 +16,7 @@
         ],
         [
             "_______", "XXXXXXX", "XXXXXXX", "SGUI(KC_Z)", "LGUI(KC_Z)", "XXXXXXX",                              "KC_PGUP", "KC_HOME", "KC_UP", "KC_END", "XXXXXXX", "_______",
-            "_______", "KC_LSFT", "LGUI(KC_X)", "LGUI(KC_C)", "LGUI(KC_V)", "KC_HYPR",                           "KC_PGDN", "KC_LEFT", "KC_DOWN", "KC_RGHT", "XXXXXXX", "_______",
+            "_______", "KC_LSFT", "LCTL_T(LGUI(KC_X))", "LOPT_T(LGUI(KC_C))", "LGUI_T(LGUI(KC_V))", "KC_HYPR",                           "KC_PGDN", "KC_LEFT", "KC_DOWN", "KC_RGHT", "XXXXXXX", "_______",
             "_______", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX",                                    "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "XXXXXXX", "_______",
             "_______", "_______", "_______",                                                                     "_______", "_______", "_______"
         ],
