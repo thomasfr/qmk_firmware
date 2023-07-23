@@ -14,7 +14,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #pragma once
-#define DEBOUNCE 4 // Default is 5ms
+#define DEBOUNCE 3 // Default is 5ms
 
 #undef LOCKING_SUPPORT_ENABLE // safes some space when not used
 #undef LOCKING_RESYNC_ENABLE // safes some space when not used
@@ -28,9 +28,9 @@
 // https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md
 #define QUICK_TAP_TERM 120
 #define QUICK_TAP_TERM_PER_KEY
-#define TAPPING_TERM 180
+#define TAPPING_TERM 190
 #define TAPPING_TERM_PER_KEY
-#define TAPPING_TOGGLE 2
+// #define TAPPING_TOGGLE 2
 
 #define DYNAMIC_MACRO_NO_NESTING
 
@@ -58,8 +58,8 @@
 #define RGB_TRIGGER_ON_KEYDOWN
 #define RGB_DISABLE_WHEN_USB_SUSPENDED // turn off effects when suspended
 #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
-// #define RGB_MATRIX_LED_PROCESS_LIMIT (RGB_MATRIX_LED_COUNT + 4) / 5 // limits the number of LEDs to process in an animation per task run (increases keyboard responsiveness)
-// #define RGB_MATRIX_LED_FLUSH_LIMIT 16 // limits in milliseconds how frequently an animation will update the LEDs. 16 (16ms) is equivalent to limiting to 60fps (increases keyboard responsiveness)
+#define RGB_MATRIX_LED_PROCESS_LIMIT (RGB_MATRIX_LED_COUNT + 4) / 5 // limits the number of LEDs to process in an animation per task run (increases keyboard responsiveness)
+#define RGB_MATRIX_LED_FLUSH_LIMIT 16 // limits in milliseconds how frequently an animation will update the LEDs. 16 (16ms) is equivalent to limiting to 60fps (increases keyboard responsiveness)
 #define RGB_MATRIX_HUE_STEP 8
 #define RGB_MATRIX_SAT_STEP 8
 #define RGB_MATRIX_VAL_STEP 8
