@@ -145,17 +145,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case LT(1, KC_ESC):
+        case LT(LAYER_MEDIA, KC_ESC):
             return TAPPING_TERM_THUMB;
-        case LT(2, KC_SPC):
+        case LT(LAYER_NAV, KC_SPC):
             return TAPPING_TERM_THUMB;
-        case LT(3, KC_TAB):
+        case LT(LAYER_SYM, KC_TAB):
             return TAPPING_TERM_THUMB;
-        case LT(3, KC_ENT):
+        case LT(LAYER_SYM, KC_ENT):
             return TAPPING_TERM_THUMB;
-        case LT(4, KC_BSPC):
+        case LT(LAYER_NUM, KC_BSPC):
             return TAPPING_TERM_THUMB;
-        case LT(5, KC_DEL):
+        case LT(LAYER_FN, KC_DEL):
             return TAPPING_TERM_THUMB;
         default:
             return TAPPING_TERM;
