@@ -13,6 +13,8 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+DEFAULT_FOLDER = splitkb/aurora/corne/rev1
+
 OLED_ENABLE = yes
 AUDIO_ENABLE = no
 MOUSEKEY_ENABLE = no
@@ -45,6 +47,7 @@ MUSIC_ENABLE = no
 KEY_LOCK_ENABLE = no
 UNICODE_ENABLE = no
 UNICODEMAP_ENABLE = no
+KEY_OVERRIDE_ENABLE = yes
 
 DEBOUNCE_TYPE = asym_eager_defer_pk
 

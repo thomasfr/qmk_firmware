@@ -28,12 +28,14 @@
 // https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md
 #define QUICK_TAP_TERM 120
 #define QUICK_TAP_TERM_PER_KEY
-#define TAPPING_TERM 200
-#define TAPPING_TERM_THUMB 170
+#define TAPPING_TERM 210
+#define TAPPING_TERM_THUMB 160
 #define TAPPING_TERM_PER_KEY
 // #define TAPPING_TOGGLE 2
 
 #define DYNAMIC_MACRO_NO_NESTING
+
+// #define KEY_OVERRIDE_ENABLE
 
 // #define AUTO_SHIFT_TIMEOUT TAPPING_TERM
 // #define NO_AUTO_SHIFT_SPECIAL
@@ -117,14 +119,3 @@
 #define ENABLE_RGB_MATRIX_MULTISPLASH
 #define ENABLE_RGB_MATRIX_SOLID_SPLASH
 #define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
-
-#define _1_____ KC_TRNS
-#define _2_____ KC_TRNS
-#define _3_____ KC_TRNS
-#define _4_____ KC_TRNS
-#define _5_____ KC_TRNS
-#define _6_____ KC_TRNS
-#define _7_____ KC_TRNS
-#define _8_____ KC_TRNS
-#define _9_____ KC_TRNS
-#define _10____ KC_TRNS
