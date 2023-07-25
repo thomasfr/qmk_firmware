@@ -28,7 +28,8 @@
 // https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md
 #define QUICK_TAP_TERM 120
 #define QUICK_TAP_TERM_PER_KEY
-#define TAPPING_TERM 190
+#define TAPPING_TERM 200
+#define TAPPING_TERM_THUMB 170
 #define TAPPING_TERM_PER_KEY
 // #define TAPPING_TOGGLE 2
 
@@ -116,9 +117,6 @@
 #define ENABLE_RGB_MATRIX_MULTISPLASH
 #define ENABLE_RGB_MATRIX_SOLID_SPLASH
 #define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
-
-#define MY_LOCK C(G(KC_Q)) // Lock the computer
-#define MY_EURO S(A(KC_2)) // €
 
 #define _1_____ KC_TRNS
 #define _2_____ KC_TRNS
