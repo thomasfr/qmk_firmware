@@ -16,7 +16,7 @@
 #pragma once
 #define DEBOUNCE 3 // Default is 5ms
 
-#define OLED_BRIGHTNESS 220
+#define OLED_BRIGHTNESS 255
 #define OLED_TIMEOUT 3000
 #define OLED_FADE_OUT
 #define OLED_FADE_OUT_INTERVAL 1

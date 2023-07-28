@@ -17,21 +17,21 @@
 #include "wpm.h"
 #include "quantum.h"
 
-// The first four layers gets a name for readability, which is then used in the OLED below.
 enum layer_names {
-    _BASE,
-    _MEDIA,
-    _NAV,
-    _SYM,
-    _NUM,
-    _FUN,
-    _RGB,
-    _PLAIN,
-    _MACRO,
-    _MEDIA_RIGHT
+    _BASE,  // Base layer
+    _MED,   // Media layer
+    _NAV,   // Navigation layer
+    _SYM,   // Symbol layer
+    _NUM,   // Number layer
+    _FUN,   // Function layer
+    _RGB,   // RGB layer
+    _PLN,   // Plain layer
+    _MAC,   // Macro layer
+    _MDR    // Media Right layer
 };
 
 char wpm_str[6];
+char rgb_mode[3];
 
 oled_rotation_t oled_init_kb(oled_rotation_t rotation) {
     return OLED_ROTATION_270;
@@ -199,7 +199,9 @@ static void render_logo_text(void) {
 
 static void render_rgb(void) {
     if (rgb_matrix_is_enabled()) {
-        oled_write_P(PSTR(" RGB "), false);
+        sprintf(rgb_mode, "%02d", rgb_matrix_get_mode());
+        oled_write_P(PSTR("RGB"), false);
+        oled_write(rgb_mode, false);
     } else {
         oled_write_P(PSTR("     "), false);
     }
@@ -220,7 +222,7 @@ static void render_layer_state(void) {
             // oled_write_P(PSTR("      BAS      "), true);
             oled_write_P(PSTR("               "), false);
             break;
-        case _MEDIA:
+        case _MED:
             oled_write_P(PSTR("      MED      "), true);
             break;
         case _NAV:
@@ -238,13 +240,13 @@ static void render_layer_state(void) {
         case _RGB:
             oled_write_P(PSTR("      RGB      "), true);
             break;
-        case _PLAIN:
+        case _PLN:
             oled_write_P(PSTR("      PLN      "), true);
             break;
-        case _MACRO:
+        case _MAC:
             oled_write_P(PSTR("      MAC      "), true);
             break;
-        case _MEDIA_RIGHT:
+        case _MDR:
             oled_write_P(PSTR("      MDR      "), true);
             break;
         default:
