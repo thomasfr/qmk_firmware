@@ -16,9 +16,23 @@
 #pragma once
 #define DEBOUNCE 3 // Default is 5ms
 
+#define OLED_BRIGHTNESS 220
+#define OLED_TIMEOUT 3000
+#define OLED_FADE_OUT
+#define OLED_FADE_OUT_INTERVAL 1
+
+// #define MASTER_LEFT
+#define SPLIT_MODS_ENABLE
+#define SPLIT_KEYBOARD 1
+#define SPLIT_WPM_ENABLE
+
+// #define WPM_SAMPLE_SECONDS 10
+// #define WPM_SAMPLE_PERIODS 30
+// #define WPM_LAUNCH_CONTROL
+
 #undef LOCKING_SUPPORT_ENABLE // safes some space when not used
 #undef LOCKING_RESYNC_ENABLE // safes some space when not used
-// #define NO_ACTION_ONESHOT
+#define NO_ACTION_ONESHOT
 #define NO_MUSIC_MODE
 // #define LAYER_STATE_8BIT // less than 8 layers
 
@@ -55,8 +69,8 @@
 #define RGB_MATRIX_DEFAULT_VAL RGB_MATRIX_MAXIMUM_BRIGHTNESS
 #define RGB_MATRIX_LED_COUNT 54
 #define RGB_MATRIX_SPLIT { 27, 27 }
-#define SPLIT_TRANSPORT_MIRROR
-// #define SPLIT_LAYER_STATE_ENABLE
+// #define SPLIT_TRANSPORT_MIRROR
+#define SPLIT_LAYER_STATE_ENABLE
 #define RGB_MATRIX_KEYPRESSES
 #define RGB_TRIGGER_ON_KEYDOWN
 #define RGB_DISABLE_WHEN_USB_SUSPENDED // turn off effects when suspended

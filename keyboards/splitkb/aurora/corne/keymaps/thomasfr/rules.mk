@@ -48,6 +48,8 @@ KEY_LOCK_ENABLE = no
 UNICODE_ENABLE = no
 UNICODEMAP_ENABLE = no
 KEY_OVERRIDE_ENABLE = yes
+WPM_ENABLE = yes
+
 
 DEBOUNCE_TYPE = asym_eager_defer_pk
 
