@@ -31,7 +31,7 @@ enum layer_names {
     _MEDIA_RIGHT
 };
 
-char wpm_str[16];
+char wpm_str[6];
 
 oled_rotation_t oled_init_kb(oled_rotation_t rotation) {
     return OLED_ROTATION_270;
@@ -197,6 +197,14 @@ static void render_logo_text(void) {
     }
 }
 
+static void render_rgb(void) {
+    if (rgb_matrix_is_enabled()) {
+        oled_write_P(PSTR(" RGB "), false);
+    } else {
+        oled_write_P(PSTR("     "), false);
+    }
+}
+
 // static void render_kb_LED_state(void) {
 //     // Host Keyboard LED Status
 //     led_t led_usb_state = host_keyboard_led_state();
@@ -246,12 +254,9 @@ static void render_layer_state(void) {
 }
 
 bool oled_task_kb(void) {
-    if (!oled_task_user()) {
-        return false;
-    }
     render_layer_state();
     render_space();
-    rgb_matrix_is_enabled() ? oled_write_P(PSTR(" RGB "), false) : oled_write_P(PSTR("     "), false);
+    render_rgb();
     render_space();
     render_logo_text();
     render_space();

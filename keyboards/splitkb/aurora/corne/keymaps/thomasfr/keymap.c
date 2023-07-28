@@ -1,6 +1,6 @@
+#include QMK_KEYBOARD_H
 #include "config.h"
 #include "keymap_common.h"
-#include QMK_KEYBOARD_H
 
 enum layer_names {
     _BASE,
@@ -95,73 +95,73 @@ const key_override_t **key_overrides = (const key_override_t *[]){
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-	[_BASE] = LAYOUT_split_3x6_3(
+    [_BASE] = LAYOUT_split_3x6_3(
         MO(_RGB),   KC_Q,       KC_W,       KC_E,       KC_R,       KC_T,       /****/   KC_Y,          KC_U,       KC_I,       KC_O,       KC_P,           LT_RMD_MUT,
         MO(_PLAIN), MT_LSFT_A,  MT_LCTL_S,  MT_LOPT_D,  MT_LGUI_F,  MT_ALL_G,   /****/   MT_ALL_H,      MT_RGUI_J,  MT_ROPT_K,  MT_RCTL_L,  MT_RSFT_SCLN,   LT_PLN_QUT,
         MO(_MACRO), KC_Z,       KC_X,       KC_C,       KC_V,       KC_B,       /****/   KC_N,          KC_M,       KC_COMM,    KC_DOT,     KC_SLSH,        MO(_MACRO),
                                                         LT_MED_ESC, LT_NAV_SPC, LT_SYM_TAB, /****/   LT_SYM_ENT,    LT_NUM_BSP, LT_FUN_DEL
     ),
 
-	[_MEDIA] = LAYOUT_split_3x6_3(
+    [_MEDIA] = LAYOUT_split_3x6_3(
         _______,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    /****/   XXXXXXX,       KC_BRID,    KC_BRIU,    XXXXXXX,    XXXXXXX,    _______,
         _______,    KC_LSFT,    KC_LCTL,    KC_LOPT,    KC_LGUI,    KC_HYPR,    /****/   KC_MUTE,       KC_VOLD,    KC_VOLU,    XXXXXXX,    XXXXXXX,    XXXXXXX,
         _______,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    /****/   KC_MPLY,       KC_MPRV,    KC_MNXT,    XXXXXXX,    XXXXXXX,    _______,
-                                            _______,    _______,    _______,    /****/   M_HPR_3,       M_HPR_4,    M_HPR_5
+                                                        _______,    _______,    _______,    /****/   M_HPR_3,       M_HPR_4,    M_HPR_5
     ),
 
-	[_NAV] = LAYOUT_split_3x6_3(
+    [_NAV] = LAYOUT_split_3x6_3(
         _______,    M_CMD_Q,    M_CMD_W,    M_CMD_F,    M_CMD_R,    M_CMD_T,    /****/  KC_PGUP,        KC_HOME,    KC_UP,      KC_END,     XXXXXXX,    _______,
         _______,    KC_LSFT,    M_CMD_S,    KC_LOPT,    KC_LGUI,    KC_HYPR,    /****/  KC_PGDN,        KC_LEFT,    KC_DOWN,    KC_RGHT,    XXXXXXX,    XXXXXXX,
         _______,    M_CMD_Z,    M_CMD_X,    M_CMD_C,    M_CMD_V,    M_CMD_B,    /****/  XXXXXXX,        XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    _______,
-                                            _______,    _______,    _______,    /****/  _______,        _______,    _______
+                                                        _______,    _______,    _______,    /****/  _______,        _______,    _______
     ),
 
-	[_SYM] = LAYOUT_split_3x6_3(
+    [_SYM] = LAYOUT_split_3x6_3(
         _______,    KC_CIRC,    KC_PIPE,    KC_LBRC,    KC_RBRC,    KC_SLSH,    /****/  KC_HASH,        KC_LT,      KC_GT,      KC_TILD,    XXXXXXX,    _______,
         _______,    KC_AT,      KC_EQL,     KC_LCBR,    KC_RCBR,    KC_ASTR,    /****/  KC_UNDS,        KC_LPRN,    KC_RPRN,    KC_COLN,    KC_SCLN,    XXXXXXX,
         _______,    KC_PERC,    KC_AMPR,    KC_QUOT,    KC_DQUO,    KC_MINS,    /****/  KC_GRV,         KC_DLR,     KC_BSLS,    KC_SLSH,    XXXXXXX,    _______,
-                                            KC_EXLM,    KC_QUES,    KC_MINS,    /****/  KC_PLUS,        KC_DOT,     KC_COMM
+                                                        KC_EXLM,    KC_QUES,    KC_MINS,    /****/  KC_PLUS,        KC_DOT,     KC_COMM
     ),
 
-	[_NUM] = LAYOUT_split_3x6_3(
+    [_NUM] = LAYOUT_split_3x6_3(
         _______,    KC_CIRC,    KC_P7,      KC_P8,      KC_P9,      KC_PSLS,    /****/  XXXXXXX,        XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    _______,
         _______,    MY_EURO,    KC_P4,      KC_P5,      KC_P6,      KC_PAST,    /****/  KC_HYPR,        KC_RGUI,    KC_ROPT,    KC_RCTL,    KC_RSFT,    XXXXXXX,
         _______,    KC_PERC,    KC_P1,      KC_P2,      KC_P3,      KC_PMNS,    /****/  XXXXXXX,        XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    _______,
-                                            KC_PDOT,    KC_P0,      KC_PPLS,    /****/  _______,        _______,    _______
+                                                        KC_PDOT,    KC_P0,      KC_PPLS,    /****/  _______,        _______,    _______
     ),
 
-	[_FUN] = LAYOUT_split_3x6_3(
+    [_FUN] = LAYOUT_split_3x6_3(
         _______,    MY_LOCK,    XXXXXXX,    M_HPR_UP,   XXXXXXX,    SGUI(KC_3), /****/  XXXXXXX,        XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    _______,
         _______,    XXXXXXX,    M_HPR_LT,   M_HPR_DN,   M_HPR_RT,   SGUI(KC_4), /****/  KC_HYPR,        KC_RGUI,    KC_ROPT,    KC_RCTL,    KC_RSFT,    XXXXXXX,
         _______,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    SGUI(KC_5), /****/  XXXXXXX,        XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    _______,
-                                            M_HPR_1,    M_SPOTL,    M_HPR_2,    /****/  _______,        _______,    _______
+                                                        M_HPR_1,    M_SPOTL,    M_HPR_2,    /****/  _______,        _______,    _______
     ),
 
-	[_RGB] = LAYOUT_split_3x6_3(
+    [_RGB] = LAYOUT_split_3x6_3(
         _______,    RGB_VAD,    RGB_VAI,    RGB_RMOD,   RGB_MOD,    XXXXXXX,    /****/  XXXXXXX,        XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    _______,
         _______,    RGB_TOG,    RGB_TOG,    RGB_SPD,    RGB_SPI,    XXXXXXX,    /****/  KC_HYPR,        KC_RGUI,    KC_ROPT,    KC_RCTL,    KC_RSFT,    XXXXXXX,
         _______,    RGB_SAD,    RGB_SAI,    RGB_HUD,    RGB_HUI,    XXXXXXX,    /****/  XXXXXXX,        XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    _______,
-                                            _______,    _______,    _______,    /****/  _______,        _______,    _______
+                                                        _______,    _______,    _______,    /****/  _______,        _______,    _______
     ),
 
-	[_PLAIN] = LAYOUT_split_3x6_3(
+    [_PLAIN] = LAYOUT_split_3x6_3(
         _______,    _______,    _______,    _______,    _______,    _______,    /****/  _______,        _______,    _______,    _______,    _______,    _______,
         _______,    KC_A,       KC_S,       KC_D,       KC_F,       KC_G,       /****/  KC_H,           KC_J,       KC_K,       KC_L,       KC_SCLN,    XXXXXXX,
         _______,    _______,    _______,    _______,    _______,    _______,    /****/  _______,        _______,    _______,    _______,    _______,    _______,
-                                            _______,    _______,    _______,    /****/  _______,        _______,    _______
+                                                        _______,    _______,    _______,    /****/  _______,        _______,    _______
     ),
 
-	[_MACRO] = LAYOUT_split_3x6_3(
+    [_MACRO] = LAYOUT_split_3x6_3(
         _______,    XXXXXXX,    XXXXXXX,    DM_REC1,    DM_REC2,    XXXXXXX,    /****/  XXXXXXX,        DM_REC2,    DM_REC1,    XXXXXXX,    XXXXXXX,    _______,
         _______,    XXXXXXX,    XXXXXXX,    DM_PLY1,    DM_PLY2,    XXXXXXX,    /****/  XXXXXXX,        DM_PLY2,    DM_PLY1,    XXXXXXX,    XXXXXXX,    XXXXXXX,
         _______,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    /****/  XXXXXXX,        XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,    _______,
-                                            _______,    _______,    _______,    /****/  _______,        _______,    _______
+                                                        _______,    _______,    _______,    /****/  _______,        _______,    _______
     ),
 
-	[_MEDIA_RIGHT] = LAYOUT_split_3x6_3(
+    [_MEDIA_RIGHT] = LAYOUT_split_3x6_3(
         _______,    _______,    _______,    _______,    _______,    _______,    /****/  _______,        _______,    _______,    KC_VOLU,    KC_MNXT,    _______,
         _______,    _______,    _______,    _______,    _______,    _______,    /****/  _______,        _______,    _______,    KC_VOLD,    KC_MPLY,    XXXXXXX,
         _______,    _______,    _______,    _______,    _______,    _______,    /****/  _______,        _______,    _______,    KC_MUTE,    KC_MPRV,    _______,
-                                            _______,    _______,    _______,    /****/  _______,        _______,    _______
+                                                        _______,    _______,    _______,    /****/  _______,        _______,    _______
     )
 };
